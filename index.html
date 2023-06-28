@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./style/style.css">
+
+        <script src="./scripts/DOM.js" defer></script>
+        <script src="./scripts/convert.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <title>Unit Conversor</title>
+    </head>
+
+
+    <body>
+        <main>
+            <section class="title">Unit Conversor</section>
+
+            <!--type selection checkboxes-->
+            <section class="container-type-select">
+                        <div class="type-select"> 
+                            <input type="checkbox" id="Length" name="Type" onchange="uncheckSiblings(this, name), changeSubtypeSelect(this)" checked>
+                            <label for="Length">Length</label>
+                        </div>
+                        
+                        <div class="type-select">
+                            <input type="checkbox" id="Weight" name="Type" onchange="uncheckSiblings(this, name), changeSubtypeSelect(this)">
+                            <label for="Weight">Weight</label>
+                        </div>
+
+                        <div class="type-select">
+                            <input type="checkbox" id="Temperature" name="Type" onchange="uncheckSiblings(this, name), changeSubtypeSelect(this)">
+                            <label for="Temperature">Temperature</label>
+                        </div>
+            </section>
+            
+            <!--Other types of convertion are generated via JavaScript-->
+            <section class="container-subtype-select">
+                <div class="subtype-select-from" id="From">
+                    <h2 class="subtitle">From</h2>
+                    <div>
+                        <input type="checkbox" id="fromMeters" name="SubtypeFrom" onchange="uncheckSiblings(this, name)">
+                        <label for="fromMeters">Meters</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="fromCentimeters" name="SubtypeFrom" onchange="uncheckSiblings(this, name)">
+                        <label for="fromCentimeters">Centimeters</label>
+                    </div>
+                
+                    <div>
+                        <input type="checkbox" id="fromInches" name="SubtypeFrom" onchange="uncheckSiblings(this, name)">
+                        <label for="fromInches">Inches</label>
+                    </div>
+                </div>
+
+                <img src="./images/setinhapng.png" alt="Seta apontando para a direita">
+
+
+                <div class="subtype-select-to" id="To">
+                    <h2 class="subtitle">To</h2>
+                
+                    <div>
+                        <input type="checkbox" id="toMeters" name="SubtypeTo" onchange="uncheckSiblings(this, name)">
+                        <label for="toMeters">Meters</label>
+                    </div>
+                
+                    <div>
+                        <input type="checkbox" id="toCentimeters" name="SubtypeTo" onchange="uncheckSiblings(this, name)">
+                        <label for="toCentimeters">Centimeters</label>
+                    </div>
+                
+                    <div>
+                        <input type="checkbox" id="toInches" name="SubtypeTo" onchange="uncheckSiblings(this, name)">
+                        <label for="toInches">Inches</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-text-area">
+                <div class="text-input">
+                    <textarea rows = "1" cols = "20" id="input" placeholder=" Input" required></textarea>
+                </div>
+
+                <button class="convert-btn" onclick="convert()">CONVERT</button>
+
+                <div class="text-output">
+                    <textarea rows = "1" cols = "20" id="output" placeholder=" Output" readonly></textarea>
+                </div>
+            </section>
+        </main>
+
+        <!--footer for contact-->
+        <footer>
+            <h3 class="credits">By Samuel Kutz</h3>
+            <ul class="contact-menu">
+                <li><a href="https://twitter.com/ahuu_1">Twitter</a></li>
+                <li><a href="https://linkedin.com/in/samuel-kutz-paranhos-11203222b/">LinkedIn</a></li>
+                <li><a href="https://github.com/samuelkutz">GitHub</a></li>
+            </ol>
+        </footer>
+    </body>
+</html>
