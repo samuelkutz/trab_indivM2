@@ -3,4 +3,4 @@ A ideia inicial do projeto foi completamente desenvolvida por desenhos, a sketch
 Na sketch não tinha o design dos detalhes, algo que foi naturalmente surgindo ao longo da curva de aprendizado pesquisando tudo. Já o JavaScript fiz questão de ser o mais perfeito possível para o que eu sei atualmente.
 Tudo foi bastante pensado, até os nomes dos Id's...
 
-Uma conclusão para isso tudo é: vem pra mim estudar backend vem
+Uma conclusão para isso tudo é: vem pra mim backend vem
