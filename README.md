@@ -14,9 +14,9 @@ npm install
 
 To convert between units, run the following command:
 
-
+```
 npm start
-
+```
 
 The converter will prompt you to enter the value you want to convert and the Units you want to convert it to.
 
@@ -27,7 +27,3 @@ The Unit Converter currently supports converting between the following Units:
 * Temperature: Celsius, Fahrenheit, Kelvin
 * Length: Meters, Kilometers, Miles
 * Weight: Grams, Kilograms, Pound
-
-## License
-
-This project is licensed under the MIT License.
